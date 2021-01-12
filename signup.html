@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Newsletter Signup</title>
+
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <!-- Custom styles for this template -->
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body class="text-center">
+    <main class="form-signin">
+      <form action="/" method="POST">
+        <img
+          class="mb-4"
+          src="./images/lablogo.jpg"
+          alt="lablogo"
+          width="72"
+          height="57"
+        />
+        <h1 class="h3 mb-3 fw-normal">Signup to My Newsletter</h1>
+
+        <input
+          type="text"
+          class="form-control top"
+          placeholder="First Name"
+          name="firstName"
+          required
+          autofocus
+        />
+        <input
+          type="text"
+          class="form-control middle"
+          placeholder="Last name"
+          name="lastName"
+          required
+        />
+        <input
+          type="email"
+          class="form-control bottom"
+          placeholder="Email"
+          name="email"
+          required
+        />
+
+        <button class="w-100 btn btn-lg btn-primary" type="submit">
+          Sign up
+        </button>
+      </form>
+    </main>
+  </body>
+</html>

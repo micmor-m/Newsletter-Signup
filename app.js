@@ -51,6 +51,13 @@ app.post("/", (req, res) => {
 
   //Method request of https allow to specify the method of the request (GET, POST,...)
   const request = https.request(url, options, (response) => {
+    //error message in case of any problem
+    if (response.statusCode === 200) {
+      res.send("Successfully subsribed!");
+    } else {
+      res.send("There was an error with the signing up, please try again");
+    }
+
     response.on("data", function (data) {
       console.log(JSON.parse(data));
     });
